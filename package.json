@@ -11,7 +11,11 @@
   "devDependencies": {
     "gulp": "^3.6.2",
     "gulp-clean": "^0.2.4",
-    "gulp-autoprefixer": "0.0.7"
+    "gulp-autoprefixer": "0.0.7",
+    "connect": "^2.14.5",
+    "connect-livereload": "^0.4.0",
+    "tiny-lr": "0.0.5",
+    "gulp-util": "^2.2.14"
   },
   "dependencies": {
     "gulp-jade": "^0.5.0",
