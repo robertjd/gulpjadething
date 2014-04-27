@@ -2,7 +2,9 @@
 
 var gulp = require('gulp'),
   clean = require('gulp-clean'),
-  less = require('gulp-less');
+  less = require('gulp-less'),
+  prefix = require('gulp-autoprefixer');
+
 
 var jade = require('gulp-jade');
 
@@ -20,6 +22,7 @@ gulp.task('jade', function(){
 gulp.task('less', function () {
   gulp.src('main.less')
     .pipe(less({}))
+    .pipe(prefix('last 4 versions', '> 1%', 'ie 8', 'ie 7'))
     .pipe(gulp.dest('.tmp/'));
 });
 
